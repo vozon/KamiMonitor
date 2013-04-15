@@ -2,14 +2,14 @@ package org.jwebap.toolkit.bytecode.asm;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.jwebap.asm.ClassAdapter;
-import org.jwebap.asm.ClassVisitor;
-import org.jwebap.asm.FieldVisitor;
-import org.jwebap.asm.MethodVisitor;
-import org.jwebap.asm.Opcodes;
-import org.jwebap.asm.Type;
-import org.jwebap.asm.commons.GeneratorAdapter;
-import org.jwebap.asm.commons.Method;
+import org.objectweb.asm.ClassAdapter;
+import org.objectweb.asm.ClassVisitor;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.commons.GeneratorAdapter;
+import org.objectweb.asm.commons.Method;
 
 /**
  * 类注入访问者，用于对类进行字节码注入

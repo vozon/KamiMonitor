@@ -2,12 +2,12 @@ package org.jwebap.toolkit.bytecode.asm;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.jwebap.asm.Label;
-import org.jwebap.asm.MethodVisitor;
-import org.jwebap.asm.Opcodes;
-import org.jwebap.asm.Type;
-import org.jwebap.asm.commons.GeneratorAdapter;
-import org.jwebap.asm.commons.Method;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.commons.GeneratorAdapter;
+import org.objectweb.asm.commons.Method;
 
 /**
  * 生成代理方法，把原方法私有化，生成新方法如下：

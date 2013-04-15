@@ -1,6 +1,5 @@
 package org.jwebap.startup;
 
-import java.net.MalformedURLException;
 import java.net.URL;
 
 import javax.servlet.ServletContext;

@@ -2,9 +2,9 @@ package org.jwebap.toolkit.bytecode.asm;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.jwebap.asm.MethodAdapter;
-import org.jwebap.asm.MethodVisitor;
-import org.jwebap.asm.Opcodes;
+import org.objectweb.asm.MethodAdapter;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
 
 /**
  * 类初始化方法字节码访问者

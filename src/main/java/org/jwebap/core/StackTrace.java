@@ -1,6 +1,5 @@
 package org.jwebap.core;
 
-import java.util.ArrayList;
 
 /**
  * 可进行堆栈跟踪的轨迹

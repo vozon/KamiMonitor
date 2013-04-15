@@ -51,7 +51,6 @@ public class BetwixtReader implements org.jwebap.cfg.persist.BeanReader {
 		InputStream in = null;
 		try {
 			_reader.registerBeanClass(_header, _clazz);
-
 			in = _input.getInputStream();
 			bean = _reader.parse(in);
 

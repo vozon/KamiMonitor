@@ -2,11 +2,12 @@ package org.jwebap.toolkit.bytecode.asm;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.jwebap.asm.AnnotationVisitor;
-import org.jwebap.asm.Attribute;
-import org.jwebap.asm.ClassVisitor;
-import org.jwebap.asm.FieldVisitor;
-import org.jwebap.asm.MethodVisitor;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Attribute;
+import org.objectweb.asm.ClassVisitor;
+import org.objectweb.asm.FieldVisitor;
+import org.objectweb.asm.MethodVisitor;
+
 
 /**
  * 判断是不是接口，是接口的话什么不作修改

@@ -14,12 +14,12 @@ import java.util.jar.JarFile;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.jwebap.asm.ClassReader;
-import org.jwebap.asm.ClassVisitor;
-import org.jwebap.asm.ClassWriter;
 import org.jwebap.toolkit.bytecode.InjectException;
 import org.jwebap.toolkit.bytecode.InjectorStrategy;
 import org.jwebap.util.Assert;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassVisitor;
+import org.objectweb.asm.ClassWriter;
 
 /**
  * 对字节码进行修改，采用asm2.1框架
@@ -162,7 +162,8 @@ public class ASMInjectorStrategy implements InjectorStrategy {
 	public Type genByteCode(byte[] rawClassData) throws Exception {
 
 		ClassReader reader = new ClassReader(rawClassData);
-		ClassWriter classWriter = new ClassWriter(true);
+		//FIXME new ClassWriter(true) ===> new ClassWriter(1);
+		ClassWriter classWriter = new ClassWriter(1);
 		ClassVisitor target = classWriter;
 
 		ClassInitClassVisitor classInitClassVisitor = new ClassInitClassVisitor(
@@ -171,8 +172,8 @@ public class ASMInjectorStrategy implements InjectorStrategy {
 				classInitClassVisitor);
 		ASMClassVisitor visitor = new ASMClassVisitor(target,
 				injectClassVisitor);
-
-		reader.accept(visitor, false);
+		// FIXME reader.accept(visitor, false) ===> reader.accept(visitor, 0);
+		reader.accept(visitor, 0);
 
 		Type clazz = visitor.getType();
 		clazz.setByteCode(classWriter.toByteArray());

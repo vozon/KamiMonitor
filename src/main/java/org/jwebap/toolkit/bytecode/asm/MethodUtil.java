@@ -2,9 +2,7 @@ package org.jwebap.toolkit.bytecode.asm;
 
 import java.lang.reflect.Array;
 import java.lang.reflect.Method;
-
-import org.jwebap.asm.Type;
-
+import org.objectweb.asm.Type;
 /**
  * ×Ö½ÚÂë×¢Èë°ïÖúÀà
  * 
