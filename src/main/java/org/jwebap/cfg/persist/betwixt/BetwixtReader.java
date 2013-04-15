@@ -31,7 +31,7 @@ public class BetwixtReader implements org.jwebap.cfg.persist.BeanReader {
 	/**
 	 * betwixtµÄbeanReader
 	 */
-	private BeanReader _reader = null;
+	private BeanReader reader = null;
 
 	public BetwixtReader(String header, Class clazz, InputSource input) {
 		Assert.assertNotNull(input, "null input.");
@@ -50,6 +50,7 @@ public class BetwixtReader implements org.jwebap.cfg.persist.BeanReader {
 		Object bean=null;
 		InputStream in = null;
 		try {
+			//_reader.registerBeanClass(_header, _clazz);
 			_reader.registerBeanClass(_header, _clazz);
 			in = _input.getInputStream();
 			bean = _reader.parse(in);
