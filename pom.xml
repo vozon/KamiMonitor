@@ -2,13 +2,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.3coder</groupId>
-	<artifactId>KamiMonitor</artifactId>
+	<artifactId>kami-monitor-api</artifactId>
 	<version>0.0.1</version>
 	<dependencies>
 		<dependency>
-			<groupId>org.apache.directory.studio</groupId>
-			<artifactId>org.apache.commons.logging</artifactId>
-			<version>1.1.1</version>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.6.1</version>
 		</dependency>
 		<!-- Servlet -->
 		<dependency>
