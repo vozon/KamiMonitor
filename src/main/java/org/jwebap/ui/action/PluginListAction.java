@@ -3,7 +3,7 @@ package org.jwebap.ui.action;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.json.JSONObject;
+import net.sf.json.JSONObject;
 import org.jwebap.cfg.model.JwebapDef;
 import org.jwebap.cfg.persist.PersistManager;
 import org.jwebap.core.RuntimeContext;

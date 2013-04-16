@@ -8,7 +8,7 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.json.JSONObject;
+import net.sf.json.JSONObject;
 import org.jwebap.plugin.tracer.FrequencyAnalyser;
 import org.jwebap.plugin.tracer.TraceFrequency;
 import org.jwebap.util.Assert;

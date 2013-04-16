@@ -7,8 +7,8 @@ import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.json.JSONObject;
-import org.json.JSONString;
+import net.sf.json.JSONObject;
+import net.sf.json.JSONString;
 import org.jwebap.cfg.exception.PluginDefLinkedException;
 import org.jwebap.cfg.exception.PluginDefNotFoundException;
 import org.jwebap.cfg.exception.PluginDefParseException;
@@ -219,9 +219,9 @@ public class PluginDefRef implements JSONString{
 	 * @return
 	 */
 	public String toJSONString() {
-		Map map = new HashMap();
+		Map<String, String> map = new HashMap<String, String>();
 		map.put("name", _name);
 		map.put("path", _ref);
-		return new JSONObject(map).toString();
+		return JSONObject.fromObject(map).toString();
 	}
 }

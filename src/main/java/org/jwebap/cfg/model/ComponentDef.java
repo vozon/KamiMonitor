@@ -4,8 +4,8 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.json.JSONObject;
-import org.json.JSONString;
+import net.sf.json.JSONObject;
+import net.sf.json.JSONString;
 import org.jwebap.core.ComponentContext;
 import org.jwebap.util.ParameterStorage;
 
@@ -164,9 +164,10 @@ public class ComponentDef extends ParameterStorage implements JSONString{
 	 * @return
 	 */
 	public String toJSONString() {
-		Map map = new HashMap();
+		Map<String, String> map = new HashMap<String, String>();
 		map.put("name", _name);
 		map.put("type", _type);
-		return new JSONObject(map).toString();
+		//return new JSONObject(map).toString();
+		return JSONObject.fromObject(map).toString();
 	}
 }

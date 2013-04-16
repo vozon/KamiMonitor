@@ -8,8 +8,8 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.json.JSONObject;
-import org.json.JSONString;
+import net.sf.json.JSONObject;
+import net.sf.json.JSONString;
 import org.jwebap.core.StatistableTrace;
 import org.jwebap.core.Trace;
 import org.jwebap.util.Arrays;
@@ -144,6 +144,7 @@ public class HttpRequestTrace extends StatistableTrace implements JSONString {
 				+ params;
 
 		map.put("detail", detail);
-		return new JSONObject(map).toString();
+//		return new JSONObject(map).toString();
+		return JSONObject.fromObject(map).toString();
 	}
 }

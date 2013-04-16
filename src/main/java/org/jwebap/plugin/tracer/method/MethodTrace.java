@@ -6,8 +6,8 @@ import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.json.JSONObject;
-import org.json.JSONString;
+import net.sf.json.JSONObject;
+import net.sf.json.JSONString;
 import org.jwebap.core.StatistableTrace;
 import org.jwebap.core.Trace;
 import org.jwebap.core.TraceKey;
@@ -120,7 +120,7 @@ public class MethodTrace extends StatistableTrace implements JSONString{
 		}
 		map.put("args", arguments);
 		
-		return new JSONObject(map).toString();
+		return JSONObject.fromObject(map).toString();
 	}
 
 

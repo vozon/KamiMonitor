@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.json.JSONObject;
+import net.sf.json.JSONObject;
 import org.jwebap.cfg.model.JwebapDef;
 import org.jwebap.cfg.model.PluginDefRef;
 import org.jwebap.cfg.persist.PersistManager;

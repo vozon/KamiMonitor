@@ -5,8 +5,8 @@ import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.json.JSONObject;
-import org.json.JSONString;
+import net.sf.json.JSONObject;
+import net.sf.json.JSONString;
 import org.jwebap.core.TraceKey;
 
 /**
@@ -108,7 +108,7 @@ public class TraceFrequency implements JSONString {
 	 * @return
 	 */
 	public String toJSONString() {
-		Map map = new HashMap();
+		Map<String, Object> map = new HashMap<String, Object>();
 
 		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		String createTime = "--:--";
@@ -128,7 +128,7 @@ public class TraceFrequency implements JSONString {
 		map.put("max", String.valueOf(getMaxActiveTime()));
 		map.put("average", String
 				.valueOf((int) (getTotalActiveTime() / (long) getFrequency())));
-
-		return new JSONObject(map).toString();
+		
+		return JSONObject.fromObject(map).toString();
 	}
 }

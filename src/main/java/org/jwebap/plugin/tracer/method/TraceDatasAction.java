@@ -3,7 +3,7 @@ package org.jwebap.plugin.tracer.method;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.json.JSONObject;
+import net.sf.json.JSONObject;
 import org.jwebap.core.Analyser;
 import org.jwebap.core.ComponentContext;
 import org.jwebap.plugin.tracer.TimeFilterAnalyser;
