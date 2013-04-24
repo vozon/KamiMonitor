@@ -6,12 +6,6 @@
 	<version>0.0.1</version>
 	<dependencies>
 		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-log4j12</artifactId>
-			<version>1.6.1</version>
-		</dependency>
-		<!-- Servlet -->
-		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
 			<version>2.5</version>
@@ -23,31 +17,66 @@
 			<version>2.1</version>
 			<scope>provided</scope>
 		</dependency>
+		<!-- <dependency> <groupId>org.slf4j</groupId> <artifactId>slf4j-log4j12</artifactId> 
+			<version>1.6.1</version> </dependency> <dependency> <groupId>javax.servlet</groupId> 
+			<artifactId>servlet-api</artifactId> <version>2.5</version> <scope>provided</scope> 
+			</dependency> <dependency> <groupId>javax.servlet.jsp</groupId> <artifactId>jsp-api</artifactId> 
+			<version>2.1</version> <scope>provided</scope> </dependency> <dependency> 
+			<groupId>commons-betwixt</groupId> <artifactId>commons-betwixt</artifactId> 
+			<version>0.8</version> </dependency> <dependency> <groupId>asm</groupId> 
+			<artifactId>asm-all</artifactId> <version>3.3.1</version> </dependency> <dependency> 
+			<groupId>org.codehaus.jackson</groupId> <artifactId>jackson-core-asl</artifactId> 
+			<version>1.9.12</version> </dependency> <dependency> <groupId>net.sf.json-lib</groupId> 
+			<artifactId>json-lib</artifactId> <version>2.3</version> <classifier>jdk15</classifier> 
+			</dependency> <dependency> <groupId>org.codehaus.jackson</groupId> <artifactId>jackson-mapper-asl</artifactId> 
+			<version>1.6.4</version> </dependency> <dependency> <groupId>org.apache.tomcat</groupId> 
+			<artifactId>tomcat-catalina</artifactId> <version>7.0.23</version> </dependency> 
+			<dependency> <groupId>org.apache.tomcat.embed</groupId> <artifactId>tomcat-embed-core</artifactId> 
+			<version>7.0.23</version> </dependency> <dependency> <groupId>org.apache.tomcat</groupId> 
+			<artifactId>tomcat-jasper</artifactId> <version>7.0.23</version> </dependency> 
+			<dependency> <groupId>org.apache.tomcat</groupId> <artifactId>tomcat-jdbc</artifactId> 
+			<version>7.0.23</version> </dependency> -->
 		<dependency>
-			<groupId>commons-betwixt</groupId>
+			<groupId>org.apache</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>2.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/commons-beanutils.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.apache</groupId>
 			<artifactId>commons-betwixt</artifactId>
 			<version>0.8</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/commons-betwixt-0.8.jar</systemPath>
 		</dependency>
 		<dependency>
-			<groupId>asm</groupId>
-			<artifactId>asm-all</artifactId>
-			<version>3.3.1</version>
+			<groupId>org.apache</groupId>
+			<artifactId>commons-digester</artifactId>
+			<version>1.7</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/commons-digester-1.7.jar</systemPath>
 		</dependency>
 		<dependency>
-			<groupId>org.codehaus.jackson</groupId>
-			<artifactId>jackson-core-asl</artifactId>
-			<version>1.9.12</version>
+			<groupId>org.apache</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>2.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/commons-logging.jar</systemPath>
 		</dependency>
 		<dependency>
-			<groupId>net.sf.json-lib</groupId>
-			<artifactId>json-lib</artifactId>
-			<version>2.3</version>
-			<classifier>jdk15</classifier>
+			<groupId>org.apache</groupId>
+			<artifactId>jxl</artifactId>
+			<version>2.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/jxl.jar</systemPath>
 		</dependency>
 		<dependency>
-			<groupId>org.codehaus.jackson</groupId>
-			<artifactId>jackson-mapper-asl</artifactId>
-			<version>1.6.4</version>
+			<groupId>org.apache</groupId>
+			<artifactId>commontemplate</artifactId>
+			<version>0.8.1</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/commontemplate-0.8.1.jar</systemPath>
 		</dependency>
 	</dependencies>
 </project>

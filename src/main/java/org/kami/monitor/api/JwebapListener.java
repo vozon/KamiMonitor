@@ -21,7 +21,7 @@ public class JwebapListener implements ServletContextListener {
 
 	private static final Log log = LogFactory.getLog(JwebapListener.class);
 
-	public static final String CONFIG_PARAM_NAME = "jwebap-config";
+	public static final String CONFIG_PARAM_NAME = "KamiMonitorConfig";
 
 	public void contextInitialized(ServletContextEvent contextEnvent) {
 		ServletContext servletContext = contextEnvent.getServletContext();

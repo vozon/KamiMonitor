@@ -31,7 +31,7 @@ public class BetwixtReader implements org.kami.monitor.api.cfg.persist.BeanReade
 	/**
 	 * betwixtµÄbeanReader
 	 */
-	private BeanReader reader = null;
+	private BeanReader _reader = null;
 
 	public BetwixtReader(String header, Class clazz, InputSource input) {
 		Assert.assertNotNull(input, "null input.");
